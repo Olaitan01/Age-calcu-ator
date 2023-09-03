@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces&family=Inter:wght@100;400&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@100;900&family=Playfair+Display&family=Poppins:ital,wght@1,900&family=Public+Sans:wght@300&family=Roboto:wght@300;900&family=Rubik:wght@300&display=swap" 
+rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body style="background-color: rgb(240,240,240); display: flex; justify-content: center; align-items: center;margin: auto ; height: 100vh; font-family: 'Poppins', sans-serif;">
+
+ <div class="container-wrapper"  >
+  <div class="container" style="width: 100%; border-radius: 0 0 10em 0; background-color: #ffffff; border: .5px solid #ffffff; padding: 1em; margin-bottom: 1em;">
+    <form action="/" method="get" autocomplete="on" id="form" novalidate >
+      <div class="container-input" style="display: flex; justify-content: space-between; padding-bottom: 1.5em; color:  hsl(0, 1%, 44%); font-size: .7em; font-weight: 200; ">
+  
+        <div class="container-input_day">
+        <label for="days" id="day-label" class="label-validity"> DAY</label>
+         <input type="number" name="Day" class="dateFormatValidator"  id="day" placeholder="DD" required style="width: 30%; display: block; font-weight: 900; ">
+         <p class="error-msg error-msg-day">Must be a valid day</p>
+        </div>
+     
+       <div class="container-input_month">
+         <label for="months" id="month-label" class="label-validity">MONTH</label>
+         <input type="number" name="Month"  class="dateFormatValidator" id="month" placeholder="MM" required style="width: 30%; display: block; font-weight: 900;">
+         <p class="error-msg error-msg-month">Must be a valid month</p>
+       </div>
+     
+       <div class="container-input_year">
+         <label for="years" id="year-label" class="label-validity">YEAR</label>
+         <input type="number" name="Year" class="dateFormatValidator" id="year" placeholder="YYYY" maxlength="4" required style="width: 40%; display: block; font-weight: 900;">
+         <p class="error-msg error-msg-year">Year must be in the past</p>
+       </div>
+     
+       </div>
+
+       <button type="submit" style="display: none;"></button>
+    </form>
+  
+  <div class="container-line" style="position: relative;">
+    <div class="line" >
+    </div>
+    <div class="conatiner-line_img">
+      <img src="assets/images/icon-arrow.svg"  class="img" alt="downward arrow icon" style="width: 10%; position: absolute; right: 0; border: .5px solid rgb(134,76,255); background-color:rgb(134,76,255); border-radius: 50%;">
+    </div>
+  </div>
+   
+  
+  <div class="container-age_output" style="font-size: 3.5rem; font-weight: bolder;">
+   <p class="year-output_container">
+    <span id="year_output" style="color:rgb(134,76,255) ; font-weight: 900;">--</span> years
+   </p>
+   <p class="month-output_container">
+   <span id="month_output"  style="color:rgb(134,76,255) ;">--</span> months
+   </p>
+   <p class="day-output_container" >
+    <span id="day_output"  style="color:rgb(134,76,255) ;">--</span> days
+   </p>
+  </div>
+   </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+ </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

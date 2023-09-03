@@ -1,0 +1,15 @@
+.line{
+    content: "";
+    display: block;
+    border-bottom: .1em solid  hsl(0, 1%, 44%);
+    width: 100%;
+    opacity: .3;
+    transform: translateY(1.8em);
+    
+}
+
+.error-msg{
+    color: rgb(223,113,120);
+    display: none;
+}
+
