@@ -21,25 +21,25 @@ rel="stylesheet">
 <body style="background-color: rgb(240,240,240); display: flex; justify-content: center; align-items: center;margin: auto ; height: 100vh; font-family: 'Poppins', sans-serif;">
 
  <div class="container-wrapper"  >
-  <div class="container" style="width: 100%; border-radius: 0 0 10em 0; background-color: #ffffff; border: .5px solid #ffffff; padding: 1em; margin-bottom: 1em;">
+  <div class="container" >
     <form action="/" method="get" autocomplete="on" id="form" novalidate >
       <div class="container-input" style="display: flex; justify-content: space-between; padding-bottom: 1.5em; color:  hsl(0, 1%, 44%); font-size: .7em; font-weight: 200; ">
   
         <div class="container-input_day">
         <label for="days" id="day-label" class="label-validity"> DAY</label>
-         <input type="number" name="Day" class="dateFormatValidator"  id="day" placeholder="DD" required style="width: 30%; display: block; font-weight: 900; ">
+         <input type="number" name="Day" class="dateFormatValidator"  id="day" placeholder="DD" required style=" display: block; font-weight: 900; padding: .5em; width: 50%; border-radius: .5em; outline: none; border: .1em solid  hsl(0, 1%, 44%);">
          <p class="error-msg error-msg-day">Must be a valid day</p>
         </div>
      
        <div class="container-input_month">
          <label for="months" id="month-label" class="label-validity">MONTH</label>
-         <input type="number" name="Month"  class="dateFormatValidator" id="month" placeholder="MM" required style="width: 30%; display: block; font-weight: 900;">
+         <input type="number" name="Month"  class="dateFormatValidator" id="month" placeholder="MM" required style="width: 50%; display: block; font-weight: 900; padding: .5em; border-radius: .5em; outline: none; border: .1em solid  hsl(0, 1%, 44%)">
          <p class="error-msg error-msg-month">Must be a valid month</p>
        </div>
      
        <div class="container-input_year">
          <label for="years" id="year-label" class="label-validity">YEAR</label>
-         <input type="number" name="Year" class="dateFormatValidator" id="year" placeholder="YYYY" maxlength="4" required style="width: 40%; display: block; font-weight: 900;">
+         <input type="number" name="Year" class="dateFormatValidator" id="year" placeholder="YYYY" maxlength="4" required style="width: 50%; display: block; font-weight: 900; padding: .5em; border-radius: .5em; outline: none; border: .1em solid  hsl(0, 1%, 44%) ">
          <p class="error-msg error-msg-year">Year must be in the past</p>
        </div>
      
@@ -52,7 +52,7 @@ rel="stylesheet">
     <div class="line" >
     </div>
     <div class="conatiner-line_img">
-      <img src="assets/images/icon-arrow.svg"  class="img" alt="downward arrow icon" style="width: 10%; position: absolute; right: 0; border: .5px solid rgb(134,76,255); background-color:rgb(134,76,255); border-radius: 50%;">
+      <img src="assets/images/icon-arrow.svg"  class="img" alt="downward arrow icon" >
     </div>
   </div>
    

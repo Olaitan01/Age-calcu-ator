@@ -1,3 +1,21 @@
+.container {
+  width: 100%;
+  border-radius: 0 0 10em 0;
+  background-color: #ffffff;
+  border: 0.5px solid #ffffff;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.img {
+  width: 10%;
+  position: absolute;
+  right: 0;
+  border: 0.5px solid rgb(134, 76, 255);
+  background-color: rgb(134, 76, 255);
+  border-radius: 50%;
+}
+
 .line {
   content: "";
   display: block;
@@ -10,4 +28,14 @@
 .error-msg {
   color: rgb(223, 113, 120);
   display: none;
+}
+
+@media screen and (max-width: 35em) {
+  .container {
+    width: 90%;
+  }
+  .img {
+    right: 45%;
+    width: 15%;
+  }
 }/*# sourceMappingURL=style.css.map */
